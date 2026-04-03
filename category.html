@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Основные мета-теги будут обновляться через JS под конкретную категорию -->
+    <title>Категория рассады - Борисов</title>
+    <meta name="description" content="Качественная рассада в Борисове и Борисовском районе. Собственное производство. Томаты, перцы, огурцы, кабачки, баклажаны.">
+    <meta name="keywords" content="рассада Борисов, рассада помидоров, рассада перцев, рассада огурцов, саженцы, теплица, огород, дача">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph мета-теги -->
+    <meta property="og:title" content="Категория рассады - Борисов">
+    <meta property="og:description" content="Качественная рассада в Борисове и Борисовском районе. Собственное производство.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cvetnik.by/category.html">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:site_name" content="Рассада в Борисове">
+    <meta property="og:locale" content="ru_RU">
+
+    <!-- Гео-метатеги -->
+    <meta name="geo.region" content="BY-MI">
+    <meta name="geo.placename" content="Borisov">
+    <meta name="geo.position" content="54.228;28.505">
+    <meta name="ICBM" content="54.228, 28.505">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Каноническая ссылка -->
+    <link rel="canonical" href="https://cvetnik.by/category.html">
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+</head>
+<body class="category-page">
+
+<header class="header">
+    <div class="container header__container">
+        <a href="index.html" class="logo">
+            <img class="logo__img" src="images/logo.png" alt="Рассада в Борисове">
+        </a>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html#about" class="nav__link">О нас</a></li>
+                <li class="nav__item"><a href="index.html#tabs" class="nav__link">Каталог</a></li>
+                <li class="nav__item"><a href="index.html#delivery" class="nav__link">Доставка</a></li>
+                <li class="nav__item"><a href="index.html#contacts" class="nav__link">Контакты</a></li>
+                <li class="nav__item"><a href="https://tulpani-borisov.by/" class="nav__link"
+                                         rel="noopener">Тюльпаны</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-contacts">
+            <a href="tel:+375296175665" class="header-contacts__phone">+375 29 617 56 65</a>
+            <div class="social">
+                <a href="viber://chat?number=%2B375296175665" class="social__link social__link--viber"
+                   aria-label="Viber"></a>
+                <a href="https://t.me/+375296175665" class="social__link social__link--telegram"
+                   aria-label="Telegram"></a>
+                <a href="https://www.instagram.com/cvetnikby/" target="_blank"
+                   class="social__link social__link--instagram" aria-label="Instagram"></a>
+            </div>
+        </div>
+
+        <button class="burger" aria-label="Меню" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <a href="index.html#tabs" class="back-to-tabs" id="back-to-tabs">Вернуться к каталогу</a>
+
+        <h1 class="category-title" id="category-title"></h1>
+
+        <div class="catalog__grid" id="products-container">
+            <!-- Товары загружаются из массива через JS -->
+        </div>
+    </div>
+</main>
+
+<section id="product-detail" class="product-detail" style="display: none;">
+    <div class="container">
+
+        <a href="index.html#tabs" class="back-to-tabs" id="back-to-tabs-detail">Вернуться к каталогу</a>
+
+        <div class="product-detail__grid">
+            <div class="product-detail__image">
+                <img id="product-image" src="" alt="">
+            </div>
+            <div class="product-detail__info">
+                <h1 id="product-name" class="product-detail__title"></h1>
+                <div id="product-price" class="product-detail__price"></div>
+                <div id="product-description" class="product-detail__description"></div>
+
+                <a href="#" id="back-to-catalog" class="product-detail__back">Вернуться к списку</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<button class="scroll-top" aria-label="Наверх">
+    <svg viewBox="0 0 50 50">
+        <rect width="50" height="50" rx="50" fill="#ffffff" fill-opacity="0.9" stroke="none"/>
+        <path d="M14 28L25 18l10 10" stroke="#000000" stroke-width="1.5" fill="none"/>
+    </svg>
+</button>
+
+<script src="script/products-data.js"></script>
+<script src="script/main.js"></script>
+</body>
+</html>
