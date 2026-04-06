@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /category.html?product=
+Disallow: /category.html?category=
+Disallow: /*?product=
+Disallow: /*?category=
+
+Sitemap: https://rassada-borisov.by/sitemap.xml

@@ -9,12 +9,14 @@ document.addEventListener('DOMContentLoaded', function() {
         'tomatoes': null,
         'cucumbers': null,
         'peppers': null,
+        'hot-peppers': null,
         'zucchinis': null,
         'eggplants': null,
         'pumpkins': null,
         'watermelons': null,
+        'melons': null,
         'cabbages': null,
-        'flowers': '1,20'
+        'flowers': '0,30'
     };
 
     // Текущий год
@@ -47,10 +49,12 @@ document.addEventListener('DOMContentLoaded', function() {
         'tomatoes': 'Помидоры',
         'cucumbers': 'Огурцы',
         'peppers': 'Перцы',
+        'hot-peppers': 'Перцы острые',
         'zucchinis': 'Кабачки',
         'eggplants': 'Баклажаны',
         'pumpkins': 'Тыквы',
         'watermelons': 'Арбузы',
+        'melons': 'Дыни',
         'cabbages': 'Капуста',
         'flowers': 'Цветы'
     };
@@ -171,10 +175,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const card = document.createElement('div');
             card.className = 'product-card';
 
-            if (product.sold) {
-                card.classList.add('sold-out');
-            }
-
             const numberedName = `<span class="product-number">${product.number}.</span> ${product.name}`;
             const priceClass = currentPrice === 'Цена формируется' ? 'price-pending' : '';
 
@@ -191,10 +191,6 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
 
             card.querySelector('.product-card__btn').addEventListener('click', function(e) {
-                if (product.sold) {
-                    e.preventDefault();
-                    return;
-                }
                 sessionStorage.setItem(storageKey, window.pageYOffset);
             });
 
@@ -207,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const product = getProductByNumber(currentCategory, number);
         const currentPrice = getCategoryPrice(currentCategory);
 
-        if (!product || product.sold) {
+        if (!product) {
             const url = new URL(window.location);
             url.searchParams.delete('product');
             window.history.replaceState({}, '', url);
@@ -251,7 +247,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Обработка состояния страницы
     if (productNumber) {
         const product = getProductByNumber(currentCategory, productNumber);
-        if (product && !product.sold) {
+        if (product) {
             hideMainContent();
             loadProductDetail(productNumber);
         } else {
@@ -419,7 +415,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (productNumber) {
             const product = getProductByNumber(currentCategory, productNumber);
-            if (product && !product.sold) {
+            if (product) {
                 hideMainContent();
                 loadProductDetail(productNumber);
             } else {
@@ -441,7 +437,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (productNumber) {
                 const product = getProductByNumber(currentCategory, productNumber);
-                if (product && !product.sold) {
+                if (product) {
                     hideMainContent();
                     loadProductDetail(productNumber);
                 } else {
