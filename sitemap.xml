@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Главная страница -->
+    <url>
+        <loc>https://rassada-borisov.by/</loc>
+        <priority>1.00</priority>
+    </url>
+    <!-- Страницы категорий (без параметров товаров) -->
+    <url>
+        <loc>https://rassada-borisov.by/category.html?category=tomatoes</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://rassada-borisov.by/category.html?category=cucumbers</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://rassada-borisov.by/category.html?category=peppers</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://rassada-borisov.by/category.html?category=eggplants</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://rassada-borisov.by/category.html?category=zucchinis</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://rassada-borisov.by/category.html?category=pumpkins</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://rassada-borisov.by/category.html?category=watermelons</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://rassada-borisov.by/category.html?category=melons</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://rassada-borisov.by/category.html?category=cabbages</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://rassada-borisov.by/category.html?category=flowers</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://rassada-borisov.by/category.html?category=hot-peppers</loc>
+        <priority>0.80</priority>
+    </url>
+</urlset>
