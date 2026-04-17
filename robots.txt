@@ -1,8 +1,23 @@
 User-agent: *
 Allow: /
-Disallow: /category.html?*product=
-Disallow: /category.html?*category=
+
+# Запрещаем сканирование страниц с конкретными товарами (с параметром product)
 Disallow: /*?*product=
-Disallow: /*?*category=
+
+# Явно разрешаем сканирование основных страниц категорий (с параметром category)
+Allow: /category.html?category=tomatoes
+Allow: /category.html?category=cucumbers
+Allow: /category.html?category=peppers
+Allow: /category.html?category=hot-peppers
+Allow: /category.html?category=zucchinis
+Allow: /category.html?category=eggplants
+Allow: /category.html?category=pumpkins
+Allow: /category.html?category=watermelons
+Allow: /category.html?category=melons
+Allow: /category.html?category=cabbages
+Allow: /category.html?category=flowers
+
+# Запрещаем все остальные страницы с параметром category (на случай, если появятся другие)
+Disallow: /category.html?category=
 
 Sitemap: https://rassada-borisov.by/sitemap.xml
