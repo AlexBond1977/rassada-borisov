@@ -200,6 +200,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Загрузка детальной информации о товаре
     function loadProductDetail(number) {
+        let metaRobots = document.querySelector('meta[name="robots"]');
+        if (metaRobots) {
+            metaRobots.remove();
+        }
+        let noIndexMeta = document.createElement('meta');
+        noIndexMeta.name = 'robots';
+        noIndexMeta.content = 'noindex, follow';
+        document.head.appendChild(noIndexMeta);
+
         const product = getProductByNumber(currentCategory, number);
         const currentPrice = getCategoryPrice(currentCategory);
 
