@@ -6,16 +6,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ===== МАССИВ ЦЕН ДЛЯ КАТЕГОРИЙ =====
     const categoryPrices = {
-        'tomatoes': null,
-        'cucumbers': null,
-        'peppers': null,
-        'hot-peppers': null,
-        'zucchinis': null,
-        'eggplants': null,
-        'pumpkins': null,
-        'watermelons': null,
-        'melons': null,
-        'cabbages': null,
+        'tomatoes': '1.00',
+        'cucumbers': '1.00',
+        'peppers': '1.50',
+        'hot-peppers': '1.50',
+        'zucchinis': '1.00',
+        'eggplants': '1.00',
+        'pumpkins': '1.00',
+        'watermelons': '1.00',
+        'melons': '1.00',
+        'cabbages': '1.00',
         'flowers': '0,30'
     };
 
