@@ -140,7 +140,7 @@ img {
 .nav__list {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 25px;
     margin: 0;
     padding: 0;
 }
@@ -184,6 +184,18 @@ img {
 }
 
 .header-contacts__phone:hover {
+    color: var(--link-hover);
+}
+
+.header-contacts__name {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--text-light);
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.header-contacts__name:hover {
     color: var(--link-hover);
 }
 
