@@ -6746,7 +6746,7 @@ const productsByCategory = {
 const soldProducts = {
     'tomatoes': [7, 10, 17, 18, 19, 21, 43],
     'cucumbers': [],
-    'peppers': [3, 4, 6],
+    'peppers': [3, 4, 5, 6],
     'hot-peppers': [],
     'zucchinis': [],
     'eggplants': [],
