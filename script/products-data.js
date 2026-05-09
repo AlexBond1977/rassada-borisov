@@ -6744,7 +6744,7 @@ const productsByCategory = {
 
 // ===== ФУНКЦИЯ ПРОДАННЫХ ТОВАРОВ =====
 const soldProducts = {
-    'tomatoes': [6, 7, 10, 17, 18, 19, 21, 37, 43, 46],
+    'tomatoes': [6, 7, 10, 11, 17, 18, 19, 21, 37, 43, 46],
     'cucumbers': [],
     'peppers': [3, 4, 5, 6],
     'hot-peppers': [],
