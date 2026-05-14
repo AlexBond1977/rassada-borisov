@@ -6874,16 +6874,16 @@ const productsByCategory = {
 
 // ===== ФУНКЦИЯ ПРОДАННЫХ ТОВАРОВ =====
 const soldProducts = {
-    'tomatoes': [6, 7, 8, 10, 11, 15, 16, 17, 18, 19, 21, 34, 37, 43, 45, 46, 57, 63],
-    'cucumbers': [],
-    'peppers': [3, 4, 5, 6, 7, 8, 10],
-    'hot-peppers': [],
+    'tomatoes': [6, 7, 8, 9, 10, 11, 15, 16, 17, 18, 19, 21, 34, 37, 43, 45, 46, 57, 63], //помидоры
+    'cucumbers': [], //огурцы
+    'peppers': [3, 4, 5, 6, 7, 8, 10], //перцы
+    'hot-peppers': [], //острые перцы
     'zucchinis': [5, 6, 8, 9], //кабачки
     'eggplants': [2], //баклажаны
     'pumpkins': [3, 7], //тыквы
-    'watermelons': [],
-    'melons': [],
-    'cabbages': [],
+    'watermelons': [7], //арбузы
+    'melons': [], // дыни
+    'cabbages': [], //капуста
     'flowers': []
 };
 
