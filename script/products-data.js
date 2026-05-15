@@ -6878,11 +6878,11 @@ const soldProducts = {
     'cucumbers': [], //огурцы
     'peppers': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 20], //перцы
     'hot-peppers': [1, 2], //острые перцы
-    'zucchinis': [5, 6, 8, 9, 10], //кабачки
+    'zucchinis': [3, 5, 6, 8, 9, 10], //кабачки
     'eggplants': [2, 3], //баклажаны
-    'pumpkins': [3, 7], //тыквы
-    'watermelons': [7], //арбузы
-    'melons': [], // дыни
+    'pumpkins': [2, 3, 4, 6, 7], //тыквы
+    'watermelons': [1, 2, 3, 7], //арбузы
+    'melons': [1], // дыни
     'cabbages': [], //капуста
     'flowers': []
 };
