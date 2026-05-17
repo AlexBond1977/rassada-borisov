@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'pumpkins': '1.00',
         'watermelons': '1.00',
         'melons': '1.00',
-        'cabbages': '1.00',
+        'cabbages': '0.50',
         'flowers': '0,30'
     };
 
