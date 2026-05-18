@@ -6995,7 +6995,7 @@ const soldProducts = {
     'eggplants': [2, 3], //баклажаны
     'pumpkins': [2, 3, 4, 6, 7], //тыквы
     'watermelons': [1, 2, 3, 4, 5, 6, 7, 8], //арбузы
-    'melons': [1, 3], // дыни
+    'melons': [1, 2, 3], // дыни
     'cabbages': [], //капуста
     'flowers': []
 };
